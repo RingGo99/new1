@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>하드 계산기</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+
+    <script language="javascript">
+        function allsum(als) {
+            var sum = 0;
+            var count = als.box.length;
+            for (var i = 0; i < count; i++) {
+                if (als.box[i].checked == true) {
+                    sum += parseInt(als.box[i].value);
+                }
+            }
+            als.total_sum.value = sum;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>점유작용 하드 행동력 계산기</h1>
+    <li>1. 디플루즈 호라이즌을 제외한 나머지 메이즈만 계산합니다.</li>
+    <li>2. 난이도는 하드 입니다.</li>
+    <li>3. 행동력 계산은 메이즈를 1회 클리어 했을때로 기준을 잡습니다.</li>
+    <li>4. 골든시타델, 케쥬얼레이드, 데이드림은 0회 클리어를 기준으로 합니다.</li>
+    <li>5. 점유작이 완료된 곳은 채크를 안 하셔도 됩니다.</li>
+    <li>6. 1회 맵은 노말로 계산합니다.</li>
+    
+    <li><a href="https://ringgo99.github.io/soulworker/test1.html" target="_blank">노말 계산기 이동</a>li>
+    
+    <form name="form">
+        <h2>로코 타운</h2>
+        <input type="checkbox" name="box" value="4" onClick="allsum(this.form);">컨트롤존 43(1회)
+        <input type="checkbox" name="box" value="18" onClick="allsum(this.form);">R 스퀘어
+        <input type="checkbox" name="box" value="32" onClick="allsum(this.form);">타워 오브 그리드
+        <input type="checkbox" name="box" value="48" onClick="allsum(this.form);">베스트 쇼타임
+        <input type="checkbox" name="box" value="102" onClick="allsum(this.form);">전부 해당
+
+        <h2>캔더스 시티</h2>
+        <input type="checkbox" name="box" value="8" onClick="allsum(this.form);">콘트리트 정글(1회)
+        <input type="checkbox" name="box" value="20" onClick="allsum(this.form);">정크 풀
+        <input type="checkbox" name="box" value="30" onClick="allsum(this.form);">더 빅 마우스
+        <input type="checkbox" name="box" value="48" onClick="allsum(this.form);">N102 쉘터
+        <input type="checkbox" name="box" value="48" onClick="allsum(this.form);">브레이크 아웃
+        <input type="checkbox" name="box" value="154" onClick="allsum(this.form);">전부 해당
+
+        <h2>그레이스 시티</h2>
+        <input type="checkbox" name="box" value="24" onClick="allsum(this.form);">프론트 라인
+        <input type="checkbox" name="box" value="24" onClick="allsum(this.form);">네드 컴퍼니
+        <input type="checkbox" name="box" value="36" onClick="allsum(this.form);">울프 크라이
+        <input type="checkbox" name="box" value="42" onClick="allsum(this.form);">콜드 레인
+        <input type="checkbox" name="box" value="56" onClick="allsum(this.form);">플레임 브레이커
+        <input type="checkbox" name="box" value="56" onClick="allsum(this.form);">에어리어 9
+        <input type="checkbox" name="box" value="238" onClick="allsum(this.form);">전부 해당
+
+        <h2>루인 포트리스</h2>
+        <input type="checkbox" name="box" value="56" onClick="allsum(this.form);">컨트롤 베이스
+        <input type="checkbox" name="box" value="56" onClick="allsum(this.form);">버스터 코어
+        <input type="checkbox" name="box" value="56" onClick="allsum(this.form);">콜드 리벤지
+        <input type="checkbox" name="box" value="70" onClick="allsum(this.form);">포가튼 아머리
+        <input type="checkbox" name="box" value="70" onClick="allsum(this.form);">딥 코어
+        <input type="checkbox" name="box" value="80" onClick="allsum(this.form);">아케론
+        <input type="checkbox" name="box" value="96" onClick="allsum(this.form);">아크 쉽
+        <input type="checkbox" name="box" value="484" onClick="allsum(this.form);">전부 해당
+
+        <h2>잔디이불 캠프</h2>
+        <input type="checkbox" name="box" value="256" onClick="allsum(this.form);">퍼포레이디드 스트리트
+        <input type="checkbox" name="box" value="304" onClick="allsum(this.form);">드레드풀 에코
+        <input type="checkbox" name="box" value="256" onClick="allsum(this.form);">맨이터 가든
+        <input type="checkbox" name="box" value="256" onClick="allsum(this.form);">데드미트 팩토리
+        <input type="checkbox" name="box" value="1072" onClick="allsum(this.form);">전부 해당
+
+        <h2>케쥬얼 레이드</h2>
+        <input type="checkbox" name="box" value="160" onClick="allsum(this.form);">라스트 카니발
+        <input type="checkbox" name="box" value="160" onClick="allsum(this.form);">정크 하이브
+        <input type="checkbox" name="box" value="160" onClick="allsum(this.form);">밴디트 하이웨이
+        <input type="checkbox" name="box" value="160" onClick="allsum(this.form);">아이언 캐슬
+        <input type="checkbox" name="box" value="840" onClick="allsum(this.form);">전부 해당
+
+        <h2>골든시타델</h2>
+        <input type="checkbox" name="box" value="500" onClick="allsum(this.form);">황금 요새(속성 포함)
+        <input type="checkbox" name="box" value="2000" onClick="allsum(this.form);">이노센트 데이드림
+        <input type="checkbox" name="box" value="2600" onClick="allsum(this.form);">세컨드 데이드림
+        <input type="checkbox" name="box" value="5100" onClick="allsum(this.form);">전부 해당<br><br>
+
+        <input type="checkbox" name="box" value="7836" onClick="allsum(this.form);">모든 메이즈 해당<br><br>
+
+        총 행동력 합: <input type="text" name="total_sum" readonly>
+    </form>
+</body>
+
+</html>
